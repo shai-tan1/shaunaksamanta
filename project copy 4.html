@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arcade — Shaunak Samanta</title>
+<meta name="description" content="A minimalist frontend web app with dark aesthetics, zero-framework architecture, and global edge deployment via Vercel." />
+<script>
+(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">Shaunak<span>Samanta</span></a>
+    <div class="nav-right">
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="index.html#contact">Let's talk</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+  </div>
+</header>
+
+<section class="detail">
+  <div class="wrap">
+    <a class="back" href="index.html#work"><span class="arr">←</span> Back to work</a>
+
+    <div class="eyebrow detail-eyebrow reveal">Project 05 · 2025</div>
+    <h1 class="detail reveal">Arcade</h1>
+    <p class="detail-sub reveal">A zero-dependency frontend web app built on vanilla JS, HTML5, and CSS3 — clean dark aesthetics, modular architecture, and global edge deployment.</p>
+
+    <div class="meta-row reveal">
+      <div class="meta"><b>Role</b><span>Frontend Developer</span></div>
+      <div class="meta"><b>Stack</b><span>JavaScript ES6+, HTML5, CSS3</span></div>
+      <div class="meta"><b>Code</b><span><a href="https://github.com/shai-tan1/Arcade" target="_blank" rel="noopener">GitHub ↗</a></span></div>
+    </div>
+
+    <div class="cover ph reveal" style="display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:1.1rem;letter-spacing:.05em;opacity:.5;">Minimalist Dark UI</div>
+
+    <div class="overview">
+      <div class="reveal">
+        <h2>Overview</h2>
+        <p>Arcade (internally "CRYSTAL") is a deliberate exercise in going back to basics — no React, no build step, no framework overhead. The focus was on building a clean, fast web experience using only platform primitives: vanilla JavaScript, HTML5, and CSS3.</p>
+        <p>This was a study in keeping a project lean. By stripping away tooling, every performance and UX decision becomes explicit — there is nothing magic happening behind the scenes. The result loads fast and deploys via automated Vercel CI/CD on every push.</p>
+        <h2 style="margin-top:36px">What I built</h2>
+        <p>Modular asset organization separating static files from core logic. Adaptive layouts for desktop and mobile. A deep-contrast dark aesthetic with intentional typographic choices. Automated deployment pipeline so changes ship without manual steps.</p>
+      </div>
+
+      <aside class="facts reveal">
+        <div class="meta"><b>Type</b><span>Personal project</span></div>
+        <div class="meta"><b>Year</b><span>2025</span></div>
+        <div class="meta"><b>Services</b><span>Frontend, Design</span></div>
+        <div class="meta"><b>Links</b><span><a href="https://github.com/shai-tan1/Arcade" target="_blank" rel="noopener" style="color:var(--accent)">Code ↗</a></span></div>
+      </aside>
+    </div>
+
+    <div class="gallery">
+      <div class="shot wide ph reveal" style="display:flex;align-items:center;justify-content:center;opacity:.4;font-family:var(--mono)">Main Interface</div>
+      <div class="shot ph reveal" style="display:flex;align-items:center;justify-content:center;opacity:.4;font-family:var(--mono)">Mobile View</div>
+      <div class="shot ph reveal" style="display:flex;align-items:center;justify-content:center;opacity:.4;font-family:var(--mono)">Dark Theme</div>
+    </div>
+
+    <div class="nextproj reveal">
+      <span class="lbl">Next project</span>
+      <a href="project copy 5.html">Chess Engine <span class="arr">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot wrap">
+  <span>© <span id="year"></span> Shaunak Samanta</span>
+  <span>Built with care</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
