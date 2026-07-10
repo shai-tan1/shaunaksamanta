@@ -42,6 +42,16 @@
     });
   }
 
+  /* ---------- clickable project cards ---------- */
+  document.querySelectorAll(".card[data-href]").forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      if (e.target.closest("a")) return;
+      var sel = window.getSelection();
+      if (sel && sel.toString().length) return;
+      window.location.href = card.getAttribute("data-href");
+    });
+  });
+
   /* ---------- scroll reveal ---------- */
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
