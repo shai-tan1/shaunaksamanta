@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv *)",
+      "Bash(cd *)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"http.server 8791\")",
+      "Bash(git add *)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-10-58.png\" ju-simulator-cover.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-11-43.png\" ju-simulator-lecture-hall.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-11-10.png\" ju-simulator-circuits-lab.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-12-21.png\" ju-simulator-campus-gate.png)",
+      "Bash(ls Screenshot*)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-22-45.png\" disease-prediction-cover.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-23-31.png\" disease-prediction-prediction-interface.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-22-49.png\" disease-prediction-model-selection.png)",
+      "Bash(mv \"Screenshot from 2026-07-11 03-22-52.png\" disease-prediction-results-view.png)",
+      "Bash(mv assets/portrait.jpeg /tmp/portrait-old-placeholder.jpeg)",
+      "Bash(git rm *)",
+      "Bash(python3 -m http.server 8795)",
+      "Bash(curl -s -o /dev/null -w \"index.html: %{http_code}\\\\n\" http://localhost:8795/index.html)",
+      "Bash(curl -s -o /dev/null -w \"assets/portrait.png: %{http_code}\\\\n\" http://localhost:8795/assets/portrait.png)"
+    ]
+  }
+}

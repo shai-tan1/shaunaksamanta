@@ -3,7 +3,7 @@
   var root = document.documentElement;
 
   /* ---------- dark-mode toggle + click sound ---------- */
-  var clickSound = new Audio("toggle-click.mp3");
+  var clickSound = new Audio("assets/toggle-click.mp3");
   clickSound.preload = "auto";
 
   var toggle = document.getElementById("themeToggle");
